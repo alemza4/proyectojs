@@ -21,7 +21,7 @@ function convertir (){
 
 //Conversion de divisas, ejemplo con ciclos.
 
-/*alert("Bienvenide a \nFugá tu Sueldo \ncon Alejandro Martinez")
+/*alert("Bienvenido a \nconversion de divisas \ncon Alejandro Martinez")
 let cantidad = prompt("ingresa una valor a convertir")
 let moneda = prompt("Elija la moneda \nD: Dolar \nE: Euro \nX:salir")
 while (moneda!="X" && moneda!="x"){
@@ -45,7 +45,7 @@ while (moneda!="X" && moneda!="x"){
          break;
          case "N" && "n":
             moneda= "x"
-            alert("ojo con el corralito")
+            alert("que tengas buen dia, saludos al dolar blue")
         }
 }*/
 
