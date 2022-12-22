@@ -1,7 +1,29 @@
-let resultado = 0 ;
-let dolar = 160;
-let euro = 180;
+let valore = 0;
 
+const Bitcoin = {
+    id: "uno",
+    Nombre : "Bitcoin",
+    Precio : 16830,
+    Puesto : 1,
+}
+const Ethereum = {
+    id: "dos",
+    Nombre : "Ethereum",
+    Precio : 1216,
+    Puesto : 2,
+}
+const Tether = {
+    id: "tres",
+    Nombre : "Tether",
+    Precio : 1,
+    Puesto : 3,
+}
+const Cardano = {
+    id: "cuatro",
+    Nombre : "Cardano",
+    Precio : 0.25,
+    Puesto : 4,
+}
 
 //Conversion de divisas, ejemplo con funcion y condicional.
 
@@ -9,15 +31,24 @@ function convertir (){
     let valore = (document.getElementById ("valor").value);
   
     if (document.getElementById ("uno").checked){
-        resultado = valore / dolar;
-        alert("el cambio de Pesos a Dolares es: $"+ resultado.toFixed(2));
+        resultado = valore / 16830;
+        alert("el cambio de Dolares a Bitcoin es: Btc"+ resultado.toFixed(2));
     }
     else if (document.getElementById ("dos").checked){
-        resultado = valore / euro;
-        alert("el cambio de Pesos a Euros es: $"+ resultado.toFixed(2));
+        resultado = valore / 1216;
+        alert("el cambio de Dolares a Ethereum es: Eth"+ resultado.toFixed(2));
+    }
+    if (document.getElementById ("tres").checked){
+        resultado = valore / 1;
+        alert("el cambio de Dolares a Tether es: Usdt"+ resultado.toFixed(2));
+    }
+    else if (document.getElementById ("cuatro").checked){
+        resultado = valore / 0.25;
+        alert("el cambio de Dolares a Cardano es: Ada"+ resultado.toFixed(2));
     }
 }
 
+//objetos y arrays Ranking de los principales exchange
 
 class exchanges{
     constructor(id,nombre,liquidez,visitas,puntuacion){
